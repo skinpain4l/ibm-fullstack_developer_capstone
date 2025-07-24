@@ -1,0 +1,95 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 5px;
+        }
+        .map-container {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden; /* This keeps the map inside the rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+          <h2 style="padding-right: 5%;">Dealerships</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Please reach out with any questions or to schedule a test drive.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="contact-info">
+                    <h4>Contact Information</h4>
+                    <p><strong>Address:</strong><br>123 Auto Lane<br>Metropolis, GA 12345</p>
+                    <p><strong>Sales Department:</strong><br>(123) 456-7890</p>
+                    <p><strong>Service Center:</strong><br>(123) 456-7891</p>
+                    <p><strong>Email:</strong><br>contact@bestcars.com</p>
+                    <hr>
+                    <h4>Hours of Operation</h4>
+                    <ul class="list-unstyled">
+                        <li><strong>Monday - Friday:</strong> 9:00 AM - 8:00 PM</li>
+                        <li><strong>Saturday:</strong> 10:00 AM - 7:00 PM</li>
+                        <li><strong>Sunday:</strong> 12:00 PM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <h4>Send Us a Message</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="text-center mb-4">Our Location</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059697993!2d-74.2598713433602!3d40.69714942211302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1678886363636" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
